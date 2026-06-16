@@ -1,43 +1,11 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
-const nodemailer = require('nodemailer');
+const { sendEmailOTP } = require('../services/emailService');
 const asyncHandler = require('../utils/asyncHandler');
 const { logActivity } = require('../utils/activityLogger');
 
 const generateOTP = () => {
   return Math.floor(100000 + Math.random() * 900000).toString();
-};
-
-const sendEmailOTP = async (email, otp) => {
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS
-    },
-    family: 4 // Force IPv4 to prevent network unreachable (ENETUNREACH) on Render/IPv6
-  });
-
-  const mailOptions = {
-    from: `"GramSathi" <${process.env.EMAIL_USER}>`,
-    to: email,
-    subject: 'GramSathi - Your Login OTP',
-    text: `Your GramSathi OTP is: ${otp}\n\nIt is valid for 10 minutes. Do not share this with anyone.`,
-    html: `
-      <div style="font-family: sans-serif; padding: 20px;">
-        <h2 style="color: #38bdf8;">GramSathi Login</h2>
-        <p>Your One-Time Password (OTP) for login is:</p>
-        <h1 style="background: #f1f5f9; padding: 10px; display: inline-block; border-radius: 5px; letter-spacing: 5px;">${otp}</h1>
-        <p>It is valid for <strong>10 minutes</strong>. Do not share this code with anyone.</p>
-        <hr style="border: none; border-top: 1px solid #e2e8f0; margin-top: 20px;" />
-        <p style="font-size: 12px; color: #64748b;">If you didn't request this, you can safely ignore this email.</p>
-      </div>
-    `
-  };
-
-  await transporter.sendMail(mailOptions);
 };
 
 exports.sendOtp = async (req, res) => {
