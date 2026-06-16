@@ -2,8 +2,15 @@ import axios from 'axios';
 import { store } from '../app/store';
 import { loginSuccess, logout } from '../redux/authSlice';
 
+let baseUrl = import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+
+// Automatically append '/api' if it's missing from the configured environment variables
+if (baseUrl && !baseUrl.endsWith('/api') && !baseUrl.endsWith('/api/')) {
+  baseUrl = baseUrl.replace(/\/$/, '') + '/api';
+}
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api',
+  baseURL: baseUrl,
 });
 
 let isRefreshing = false;
