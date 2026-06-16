@@ -67,9 +67,23 @@ exports.sendOtp = async (req, res) => {
     await user.save();
 
     // Send real email OTP via Nodemailer
-    await sendEmailOTP(email, otp);
-
-    res.status(200).json({ message: 'OTP sent successfully to email' });
+    try {
+      await sendEmailOTP(email, otp);
+      res.status(200).json({ message: 'OTP sent successfully to email' });
+    } catch (emailError) {
+      console.warn(`\n========================================`);
+      console.warn(`SMTP EMAIL DELIVERY FAILED (Port likely blocked by host).`);
+      console.warn(`LOGGING OTP TO CONSOLE FOR TESTING:`);
+      console.warn(`EMAIL: ${email}`);
+      console.warn(`OTP: ${otp}`);
+      console.warn(`========================================\n`);
+      console.error(emailError);
+      
+      res.status(200).json({ 
+        message: 'OTP generated (logged to server console due to SMTP port block)', 
+        isMocked: true 
+      });
+    }
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
