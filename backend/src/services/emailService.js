@@ -11,17 +11,26 @@ const sendEmailOTP = async (email, otp) => {
     return true;
   }
 
+  // const transporter = nodemailer.createTransport({
+  //   host: 'smtp.gmail.com',
+  //   port: 465,
+  //   secure: true,
+  //   auth: {
+  //     user: process.env.EMAIL_USER,
+  //     pass: process.env.EMAIL_PASS,
+  //   },
+  //   family: 4 // Force IPv4 to prevent network unreachable (ENETUNREACH) on Render/IPv6
+  // });
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    requireTLS: true,
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-    family: 4 // Force IPv4 to prevent network unreachable (ENETUNREACH) on Render/IPv6
+      pass: process.env.EMAIL_PASS
+    }
   });
-
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
