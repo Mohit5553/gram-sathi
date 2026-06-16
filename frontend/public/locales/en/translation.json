@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "adminPanel": "Admin Panel",
+    "logout": "Logout",
+    "login": "Log in"
+  },
+  "dashboard": {
+    "weather": "Weather",
+    "mandiRates": "Today's Mandi Rates",
+    "news": "District News",
+    "schemes": "Government Schemes",
+    "jobs": "Local Jobs",
+    "marketplace": "Local Marketplace",
+    "servicesTitle": "Marketplace Booking Services",
+    "notices": "Panchayat Notices",
+    "emergency": "Emergency Hotlines",
+    "fuel": "Fuel Prices",
+    "metals": "Gold & Silver",
+    "currency": "Dollar Rate",
+    "updated": "Updated",
+    "viewMore": "View All",
+    "applyNow": "Apply Now",
+    "contactSeller": "Contact Seller",
+    "source": "Source",
+    "seeMore": "See More",
+    "searchPlaceholder": "Search crops, mandi prices, jobs, schemes, or services..."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Failed to load data",
+    "noData": "No items found",
+    "back": "Back",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "mandi": {
+    "commodity": "Commodity",
+    "price": "Price",
+    "unit": "Unit",
+    "market": "Market",
+    "searchPlaceholder": "Search crop or market...",
+    "allCrops": "All Crops",
+    "source": "Source: AGMARKNET",
+    "interval": "Updated: 6h Interval"
+  },
+  "crop": {
+    "gehu": "Gehu (Wheat)",
+    "dhan": "Dhan (Paddy)",
+    "sarso": "Sarso (Mustard)",
+    "chana": "Chana (Gram)",
+    "arhar": "Arhar (Pigeon Pea)",
+    "aloo": "Aloo (Potato)"
+  },
+  "weather": {
+    "humidity": "Humidity",
+    "rainChance": "Rain Chance",
+    "windSpeed": "Wind Speed",
+    "feelsLike": "Feels Like",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "forecast": "7-Day Forecast",
+    "showForecast": "Show 7-Day Forecast",
+    "hideForecast": "Hide Forecast",
+    "updated": "Updated: Auto-Sync",
+    "cond": {
+      "sunny": "Sunny",
+      "partlycloudy": "Partly Cloudy",
+      "foggy": "Foggy",
+      "drizzle": "Drizzle",
+      "rainy": "Rainy",
+      "snowy": "Snowy",
+      "showers": "Showers",
+      "thunderstorm": "Thunderstorm",
+      "cloudy": "Cloudy"
+    }
+  },
+  "emergency": {
+    "police": "Police Department",
+    "ambulance": "Ambulance Service",
+    "fire": "Fire Brigade",
+    "women": "Women Helpline",
+    "kisan": "Kisan Helpline",
+    "subtitle": "Quick access to local panchayat and national helplines"
+  },
+  "newsPage": {
+    "back": "Back to Dashboard",
+    "title": "District News Feed",
+    "subtitle": "Stay updated with latest regional news, agriculture guidelines, and administrative updates in Gonda, Uttar Pradesh.",
+    "readFull": "Read Full Story",
+    "reporter": "Reporter",
+    "selectArticle": "Select a news article from the feed to view full coverage details here."
+  },
+  "jobsPage": {
+    "back": "Back to Dashboard",
+    "title": "Local Jobs Directory",
+    "subtitle": "Find local employment, part-time jobs, and wage labor opportunities in Gonda region.",
+    "searchPlaceholder": "Search jobs by role or company...",
+    "qualification": "Qualification",
+    "description": "Description",
+    "contact": "Contact Phone",
+    "apply": "Apply Now",
+    "applied": "Already Applied",
+    "selectJob": "Select a job from the list to view eligibility and contact details here.",
+    "success": "Application submitted successfully!"
+  },
+  "marketplacePage": {
+    "back": "Back to Dashboard",
+    "title": "Local Marketplace",
+    "subtitle": "Buy, sell, or rent agricultural produce, equipment, and other goods in your community.",
+    "searchPlaceholder": "Search items by title...",
+    "sellerDetails": "Seller Details",
+    "sellerName": "Seller Name",
+    "category": "Category",
+    "description": "Description",
+    "contact": "Contact Seller",
+    "selectItem": "Select an item from the listings to view full description and contact the seller here."
+  }
+}

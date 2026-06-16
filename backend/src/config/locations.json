@@ -1,0 +1,95 @@
+[
+  {
+    "state": "Bihar",
+    "districts": [
+      {
+        "district": "Patna",
+        "blocks": [
+          {
+            "block": "Phulwari Sharif",
+            "villages": ["Phulwari Sharif Village", "Haroon Nagar", "Nohsa", "Janipur"]
+          },
+          {
+            "block": "Danapur",
+            "villages": ["Danapur Cantt", "Khagaul", "Lakhnibag", "Nasriganj"]
+          }
+        ]
+      },
+      {
+        "district": "Gaya",
+        "blocks": [
+          {
+            "block": "Bodh Gaya",
+            "villages": ["Bodh Gaya Village", "Mastipur", "Bakraur", "Sujata Bypass"]
+          },
+          {
+            "block": "Sherghati",
+            "villages": ["Sherghati Village", "Hamzapur", "Gopalpur"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Uttar Pradesh",
+    "districts": [
+      {
+        "district": "Lucknow",
+        "blocks": [
+          {
+            "block": "Chinhat",
+            "villages": ["Chinhat Village", "Mati", "Basti", "Uttardhona"]
+          },
+          {
+            "block": "Kakori",
+            "villages": ["Kakori Village", "Kusmaura", "Amausi"]
+          }
+        ]
+      },
+      {
+        "district": "Varanasi",
+        "blocks": [
+          {
+            "block": "Kashi Vidyapeeth",
+            "villages": ["Kashi Village", "Shivpur", "Manduadih"]
+          },
+          {
+            "block": "Pindra",
+            "villages": ["Pindra Village", "Khalispur", "Mangari"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "districts": [
+      {
+        "district": "Pune",
+        "blocks": [
+          {
+            "block": "Haveli",
+            "villages": ["Haveli Village", "Wagholi", "Loni Kalbhor"]
+          },
+          {
+            "block": "Maval",
+            "villages": ["Maval Village", "Lonavala Rural", "Kamshet"]
+          }
+        ]
+      },
+      {
+        "district": "Nagpur",
+        "blocks": [
+          {
+            "block": "Kamptee",
+            "villages": ["Kamptee Village", "Kanhan", "Yerla"]
+          },
+          {
+            "block": "Hingna",
+            "villages": ["Hingna Village", "Wanadongri", "Raipur"]
+          }
+        ]
+      }
+    ]
+  }
+]
