@@ -7,7 +7,7 @@ import ProtectedRoute from './ProtectedRoute';
 // Lazy loading all pages
 const Home = lazy(() => import('../pages/Home/Home'));
 const Login = lazy(() => import('../pages/Auth/Login'));
-const VerifyOtp = lazy(() => import('../pages/Auth/VerifyOTP'));
+const VerifyOtp = lazy(() => import('../pages/Auth/VerifyOtp'));
 const TractorList = lazy(() => import('../pages/Tractor/TractorList'));
 const AddTractor = lazy(() => import('../pages/Tractor/AddTractor'));
 const JCBList = lazy(() => import('../pages/JCB/JCBList'));
