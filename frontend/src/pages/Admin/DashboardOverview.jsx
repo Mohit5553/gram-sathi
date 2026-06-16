@@ -191,7 +191,7 @@ const DashboardOverview = () => {
       setNews(newsRes.data?.data || []);
       
       setWeatherData(weatherRes.data);
-      setMandiData(mandiRes.data || []);
+      setMandiData(mandiRes.data?.data || (Array.isArray(mandiRes.data) ? mandiRes.data : []));
       setFuelRates(fuelRes.data);
       setMetalRates(metalRes.data);
 
